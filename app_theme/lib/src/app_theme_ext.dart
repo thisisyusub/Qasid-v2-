@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../app_theme.dart';
 import 'app_colors.dart';
 import 'app_theme.dart';
+import 'app_theme_provider.dart';
 import 'app_typography.dart';
 
 extension AppThemeExt on BuildContext {
