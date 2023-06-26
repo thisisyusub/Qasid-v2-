@@ -1,0 +1,4 @@
+.dart_tool/
+.idea
+melos_qasid.iml
+pubspec.lock

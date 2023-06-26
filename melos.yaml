@@ -1,0 +1,8 @@
+name: Qasid
+repository: https://github.com/thisisyusub/Qasid-v2-
+
+packages:
+  - apps/*
+  - features/*
+  - core
+  - shared
