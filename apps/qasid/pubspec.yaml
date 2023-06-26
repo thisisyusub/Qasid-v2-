@@ -19,6 +19,16 @@ dependencies:
       url: git@github.com:thisisyusub/Qasid-v2-.git
       path: app_theme
       ref: main
+  core:
+    git:
+      url: git@github.com:thisisyusub/Qasid-v2-.git
+      path: core
+      ref: main
+  theme_controller:
+    git:
+      url: git@github.com:thisisyusub/Qasid-v2-.git
+      path: core
+      ref: main
 
 dev_dependencies:
   flutter_test:
