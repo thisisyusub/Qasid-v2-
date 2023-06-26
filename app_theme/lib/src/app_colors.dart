@@ -4,31 +4,26 @@ import 'named.dart';
 
 class AppColorsData extends Equatable {
   const AppColorsData({
-    required this.primary,
+    required this.background,
     required this.onBackground,
   });
 
   factory AppColorsData.light() => const AppColorsData(
-        primary: MaterialColor(
-          0xFF347AF6,
-          <int, Color>{
-            50: Color(0xFFE4F3FF),
-            100: Color(0xFFBEE1FF),
-            600: Color(0xFF328DFF),
-            500: Color(0xFF2B9CFF),
-            700: Color(0xFF347AF6),
-            900: Color(0xFF3547C4)
-          },
-        ),
+        background: Colors.white,
         onBackground: Color(0xFF000000),
       );
 
-  final MaterialColor primary;
+  factory AppColorsData.dark() => const AppColorsData(
+        background: Colors.black,
+        onBackground: Colors.white,
+      );
+
+  final Color background;
   final Color onBackground;
 
   @override
   List<Object?> get props => [
-        primary.named('primary'),
+        background.named('primary'),
         onBackground.named('onBackground'),
       ];
 }

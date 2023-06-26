@@ -1,25 +1,12 @@
-import 'package:app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'injection_container.dart';
+import 'presentation/app.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await InjectionContainer.init();
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return AppThemeProvider(
-      appTheme: AppTheme(
-        colors: AppColorsData.light(),
-        typography: AppTypographyData.regular(),
-      ),
-      child: const MaterialApp(
-        title: 'Qasid (v2)',
-        home: Scaffold(),
-      ),
-    );
-  }
+  runApp(const ProviderScope(child: MyApp()));
 }

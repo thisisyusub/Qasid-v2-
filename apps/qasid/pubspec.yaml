@@ -12,7 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-
+  flutter_riverpod: ^2.3.6
+  get_it: ^7.6.0
+  shared_preferences: 2.1.2
 
   app_theme:
     git:
