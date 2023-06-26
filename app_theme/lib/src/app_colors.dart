@@ -1,7 +1,8 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'named.dart';
 
-class AppColorsData {
+class AppColorsData extends Equatable {
   const AppColorsData({
     required this.primary,
     required this.onBackground,
@@ -26,10 +27,8 @@ class AppColorsData {
   final Color onBackground;
 
   @override
-  String toString() {
-    return '''AppColorsData(
-      primary: ${primary.named('primary')},
-      onBackground: ${onBackground.named('onBackground')},
-    )''';
-  }
+  List<Object?> get props => [
+        primary.named('primary'),
+        onBackground.named('onBackground'),
+      ];
 }

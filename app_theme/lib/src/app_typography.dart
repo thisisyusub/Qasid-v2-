@@ -1,3 +1,4 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'named.dart';
 
@@ -15,7 +16,7 @@ extension FontWeightExt on TextStyle {
   }
 }
 
-class AppTypographyData {
+class AppTypographyData extends Equatable {
   const AppTypographyData({
     required this.sp10,
   });
@@ -29,9 +30,7 @@ class AppTypographyData {
   final TextStyle sp10;
 
   @override
-  String toString() {
-    return '''AppTypographyData(
-      sp10: ${sp10.named('sp10')},
-    )''';
-  }
+  List<Object?> get props => [
+        sp10.named('sp10'),
+      ];
 }

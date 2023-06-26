@@ -1,6 +1,6 @@
-name: app_theme
-description: App Theme Configuration
-version: 1.0.0
+name: app_theme_controller
+description: A new Flutter package project.
+version: 0.0.1
 homepage:
 
 environment:
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  equatable: ^2.0.5  
 
 dev_dependencies:
   flutter_test:
