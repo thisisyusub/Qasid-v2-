@@ -24,7 +24,7 @@ dependencies:
       url: git@github.com:thisisyusub/Qasid-v2-.git
       path: core
       ref: main
-  theme_controller:
+  app_theme_controller:
     git:
       url: git@github.com:thisisyusub/Qasid-v2-.git
       path: core
