@@ -6,3 +6,4 @@ packages:
   - features/*
   - core
   - shared
+  - app_theme
